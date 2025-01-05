@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : BACQ
+- PRÉNOM : Issa
+- GROUPE : A1
+- URL du site : https://aurizon.netlify.app
+- URL FIGMA : https://www.figma.com/design/ntiBStU3rYL1QUhLlmnBhL/Maquettes-projet-individuel?node-id=35-152&t=RlE8qvuT1EC2mSST-1

@@ -1,0 +1,10 @@
+/* Variable collection */
+:root {
+    /* Mode 1 */
+    /* color */
+    --black: #000000;
+    --dark-gray: #303030;
+    --light-grey: #d9d9d9;
+    --strong-grey: #232323;
+    --white: #ffffff;
+  }
