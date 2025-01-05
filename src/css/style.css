@@ -1,0 +1,11 @@
+@import "/src/css/utils/variable.css";
+
+@import "/src/css/components/header.css";
+
+@font-face {
+    font-family: 'DESIGNERRegular';
+    src: url('/assets/font/DESIGNERRegular.woff') format('woff'),
+         url('/assets/font/DESIGNERRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,105 @@
+/* Menu Styles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1A1A;
+    transition: left 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu--info {
+    background-color: #1A1A1A;
+    z-index: 1001;
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu__logo {
+    width: 40px;
+    height: 40px;
+}
+
+.menu__button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu__button--close img,
+.menu__button--back img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item {
+    margin-bottom: 30px;
+}
+
+.menu__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.menu__link:hover {
+    opacity: 0.8;
+}
+
+.menu__info-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu__arrow-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .menu {
+        width: 400px;
+    }
+}
+
+/* Animation for menu transitions */
+.menu,
+.menu--info {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.active {
+    transform: translateX(100%);
+}
+
+.menu--info.active {
+    transform: translateX(0);
+}
