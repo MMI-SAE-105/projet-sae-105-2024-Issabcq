@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Films - Aurizon</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js"></script>
+</head>
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header__logo-container">
+                <img src="/assets/icons/logo.svg" alt="Aurizon Logo" class="header__logo">
+                <nav class="menu" id="mainMenu">
+                    <div class="menu__header">
+                        <button class="menu__button menu__button--open" id="openMenu">
+                            <img src="/assets/icons/hamburger.svg" alt="Menu Logo" class="menu__logo">
+                        </button>
+                        <button class="menu__button menu__button--close" id="closeMenu">
+                            <span class="menu__close-icon"><img src="/assets/icons/closemenu.svg"></span>
+                        </button>
+                    </div>
+                    
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="terminatorENG.html" class="menu__link">TERMINATOR AND ROBOTICS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="cameronENG.html" class="menu__link">JAMES CAMERON, INNOVATION AND ROBOTICS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="h2g2ENG.html" class="menu__link">H2G2 : THE SATIRICAL FUTURE OF ROBOTICS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="undergroundENG.html" class="menu__link">UNDERGROUND BY TOM WAITS : THE UNKNOWN FUTURE OF ROBOTICS IN A SONG</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="spotENG.html" class="menu__link">SPOT, BOSTON DYNAMIC'S  INNOVATIVE SMALL ROBOT </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="gallery.html" class="menu__link">MOVIE GALLERY</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="timeline.html" class="menu__link">ROBOTIC'S TIMELINE</a>
+                        </li>
+                        <li class="menu__item menu__info-trigger" id="infoTrigger">
+                            INFORMATIONS
+                            <span class="menu__arrow-icon"><img src="/assets/icons/dropdown.svg" alt="fleche-info"> </span>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="menu menu--info" id="infoMenu">
+                    <div class="menu__header">
+                        <button class="menu__button menu__button--back" id="backToMain">
+                            <span class="menu__back-icon"><img src="/assets/icons/arrowbutton.svg" alt="fermer-le-menu"></span>
+                        </button>
+                    </div>
+                    
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="glossary.html" class="menu__link">GLOSSARY</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="aboutme.html" class="menu__link">ABOUT ME</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="otherproject.html" class="menu__link">OTHER PROJECTS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contactENG.html" class="menu__link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+    </div>
+    <nav class="header__nav">
+        <button class="header__lang-toggle">FR</button>
+    </nav>
+</div>
+<nav class="header__nav">
+    <button class="header__lang-toggle">EN</button>
+</nav>
+
+        <main class="main">
+            <section class="gallery">
+                <div class="gallery__hero">
+                    <h1 class="gallery__title">Movie Gallery</h1>
+                    <p class="gallery__description">A selection of movies representing possible future developments in robotics. Click on the posters to see the trailers!</p>
+                </div>
+                
+                <div class="gallery__grid">
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=bD7bpG-zDJQ" target="_blank" rel="noopener">
+                            <img src="/assets/img/starwars.avif" alt="Movie poster Star Wars Episode 1" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Saga STAR WARS  George Lucas</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=z3biFxZIJOQ" target="_blank" rel="noopener">
+                            <img src="/assets/img/bighero6.avif" alt="Big hero 6 movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Big Hero 6, Don Hall, Chris Williams - 2014</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=5gh2ULyJXR4" target="_blank" rel="noopener">
+                            <img src="/assets/img/pacificrim.avif" alt="Pacific Rim movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Pacific Rim, Guillermo del Toro - 2013</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=CZ1CATNbXg0" target="_blank" rel="noopener">
+                            <img src="/assets/img/walle.avif" alt="WALL-E movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Wall-E, Andrew Stanton - 2008</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://youtu.be/SwfmV3nn6QA?si=soVF_dp1vF6_ySNH" target="_blank" rel="noopener">
+                            <img src="/assets/img/realsteel.avif" alt="Real Steel movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Real Steel, Shawn Levy - 2011</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=G4VmJcZR0Yg" target="_blank" rel="noopener">
+                            <img src="/assets/img/ghostintheshell.avif" alt="Ghost in the Shell movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Ghost in the shell, Mamoru Oshii - 1997</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=vKQi3bBA1y8" target="_blank" rel="noopener">
+                            <img src="/assets/img/matrix.avif" alt="Matrix movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Matrix, Lana & Lilly Wachowski - 1999</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=w7pYhpJaJW8" target="_blank" rel="noopener">
+                            <img src="/assets/img/alita.avif" alt="Alita: Battle Angel movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">Alita : Battle Angle, Robert Rodriguez - 2019</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=rL6RRIOZyCM" target="_blank" rel="noopener">
+                            <img src="/assets/img/irobot.avif" alt="I, Robot movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">I, Robot, Alex Proyas - 2004</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery__item">
+                        <a href="https://www.youtube.com/watch?v=anRXJgLM7D4" target="_blank" rel="noopener">
+                            <img src="/assets/img/irongiant.avif" alt="The iron giant movie poster" class="gallery__image">
+                        </a>
+                        <div class="gallery__info">
+                            <p class="gallery__movie-title">The Iron Giant, Brad Bird - 1999</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__section">
+                <h2 class="footer__title">About me</h2>
+                <div class="footer__about">
+                    <p class="footer__text">BACQ Issa</p>
+                    <p class="footer__text">MMI 1 1st year</p>
+                    <p class="footer__text">TDA1</p>
+                </div>
+            </div>
+        
+            <div class="footer__section">
+                <h2 class="footer__title">CONTACT</h2>
+                <a href="mailto:issa.bacq-gadiaga@edu.univ-fcomte.fr" class="footer__email">
+                    issa.bacq-gadiaga@edu.univ-fcomte.fr
+                </a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/icons/mailto.svg" alt="Email" class="footer__social-icon">
+                    </a>
+                </div>
+            </div>
+        
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Other Projects</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">GALLERY</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <p class="Term_of_use__title">
+                Terms of use
+            </p>
+            <p class="footer__copyright">
+                Project carried out in 2024 as part of an educational exercise at the
+                <a href="#" class="footer__copyright-link">MMI department of Montbéliard</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
