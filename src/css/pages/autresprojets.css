@@ -1,0 +1,117 @@
+/* Main content layout */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Projects section */
+.projects {
+    padding: 2rem 0;
+}
+
+.projects__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-family: Designer;
+}
+
+/* Projects grid */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Project cards */
+.projects__item {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projects__link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.projects__card {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects__name {
+    font-size: 1rem;
+    color: #b0b0b0;
+    font-style: italic;
+    font-family: kanit;
+}
+
+.projects__project {
+    font-family: kanit;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Hover effects */
+.projects__card:hover .projects__name {
+    color: #4a9eff;
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects__item {
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--item-index, 0) * 0.1s);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects__title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects__grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .projects__card {
+        padding: 1.5rem;
+    }
+
+    .projects__name {
+        font-size: 1.1rem;
+    }
+
+    .projects__project {
+        font-size: 0.9rem;
+    }
+}

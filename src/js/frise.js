@@ -1,5 +1,5 @@
 const timelineData = [
-    { name: "Unimate, premier robot", image: "/assets/img/unimate.avif" },
+    { name: "Unimate, premier robot, 1961", image: "/assets/img/unimate.avif" },
     { name: "Lunokhod 1, 1er robot téléguidé depuis la terre à se poser sur la lune, 1970", image: "/assets/img/lunokhod1.avif" },
     { name: "Roomba, robot ménager, 2002", image: "/assets/img/roomba.avif" },
     { name: "DER1, Androïde d’accueil, 2005", image: "/assets/img/der1.avif" },

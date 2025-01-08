@@ -10,6 +10,10 @@
 @import "/src/css/pages/accueil.css";
 @import "/src/css/pages/article.css";
 @import "/src/css/pages/gallerie.css";
+@import "/src/css/pages/glossaire.css";
+@import "/src/css/pages/aboutme.css";
+@import "/src/css/pages/autresprojets.css";
+@import "/src/css/pages/contact.css";
 
 @font-face {
     font-family: 'DESIGNERRegular';

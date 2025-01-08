@@ -74,7 +74,7 @@
   
   /* Highlight section */
   .article__section--highlight {
-    background-color: var(--dark-gray);
+    background-color: var(--strong-grey);
     padding: 2rem;
     border-radius: 8px;
     margin: 3rem 0;
@@ -103,6 +103,7 @@
   @media (max-width: 768px) {
     .article__title {
       font-size: 2rem;
+      margin-top: 40px;
     }
     
     .article__text {
@@ -122,7 +123,7 @@
     .article__title {
       font-size: 1.75rem;
       font-family: Designer;
-      margin-top: 30px;
+      margin-top: 60px;
     }
     
     .article__section {

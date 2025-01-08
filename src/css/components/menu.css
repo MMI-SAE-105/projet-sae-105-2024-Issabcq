@@ -42,7 +42,7 @@
 .menu__close-icon img {
     width: 35px;
     height: 35px;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .menu__list {

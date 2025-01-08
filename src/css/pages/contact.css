@@ -1,0 +1,144 @@
+/* Main content layout */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Contact section */
+.contact {
+    padding: 2rem 0;
+}
+
+.contact__intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    font-family: Designer;
+}
+
+.contact__text {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+    font-family: Kanit;
+}
+
+/* Form styling */
+.contact__form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: kanit;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 1rem;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    outline: none;
+    border-color: #4a9eff;
+    box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+}
+
+.contact__submit {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.contact__submit:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+.contact__submit:active {
+    transform: translateY(0);
+}
+
+/* Form validation styling */
+.contact__input:invalid,
+.contact__textarea:invalid {
+    border-color:white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact__title {
+        font-size: 2rem;
+    }
+
+    .contact__text {
+        font-size: 1rem;
+    }
+
+    .contact__form {
+        gap: 1.5rem;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        padding: 0.875rem;
+    }
+}
+
+/* Animation for form elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact__form-group {
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--item-index, 0) * 0.1s);
+}
