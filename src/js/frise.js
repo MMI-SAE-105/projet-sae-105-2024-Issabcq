@@ -30,3 +30,4 @@ function renderTimeline() {
 }
 
 document.addEventListener('DOMContentLoaded', renderTimeline);
+
