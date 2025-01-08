@@ -1,0 +1,131 @@
+/* Main content layout */
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--dark-gray);
+    color: #fff;
+  }
+  
+  /* Article styling */
+  .article {
+    margin-bottom: 4rem;
+  }
+  
+  .article__hero {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .article__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    background-color: (var(--strong-grey));
+  }
+  
+  .article__meta {
+    color: white;
+    font-size: 0.9rem;
+    font-family: kanit;
+  }
+  
+  /* Video styling */
+  .article__video {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    margin: 2rem 0;
+    border-radius: 8px;
+  }
+  
+  /* Section styling */
+  .article__section {
+    margin: 3rem 0;
+  }
+  
+  .article__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    color: #f0f0f0;
+    font-family: kanit;
+  }
+  
+  /* Image styling */
+  .article__image, 
+  .article__logo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem 0 0.5rem 0;
+  }
+  
+  /* Image captions */
+  .article__section p:not(.article__text) {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem 0 2rem 0;
+    font-family: kanit;
+  }
+  
+  /* Highlight section */
+  .article__section--highlight {
+    background-color: var(--dark-gray);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+  }
+
+  .vid__meta{
+    text-align: center;
+    color: white;
+    font-family: kanit;
+  }
+  
+  /* Links */
+  .article a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: kanit;
+  }
+  
+  .article a:hover {
+    color: #ff6666;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .article__title {
+      font-size: 2rem;
+    }
+    
+    .article__text {
+      font-size: 1rem;
+    }
+    
+    .article__section--highlight {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      padding: 1rem;
+    }
+    
+    .article__title {
+      font-size: 1.75rem;
+      font-family: Designer;
+      margin-top: 30px;
+    }
+    
+    .article__section {
+      margin: 2rem 0;
+    }
+  }

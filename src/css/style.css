@@ -7,6 +7,9 @@
 @import "/src/css/components/footer.css";
 
 @import "/src/css/pages/frise.css";
+@import "/src/css/pages/accueil.css";
+@import "/src/css/pages/article.css";
+@import "/src/css/pages/gallerie.css";
 
 @font-face {
     font-family: 'DESIGNERRegular';
