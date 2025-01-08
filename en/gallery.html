@@ -5,59 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie de Films - Aurizon</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <script src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/menu.js"></script>
 </head>
 <body>
     <div class="site">
         <header class="header">
             <div class="header__logo-container">
-                <img src="/assets/icons/logo.svg" alt="Aurizon Logo" class="header__logo">
-                <nav class="menu" id="mainMenu">
-                    <div class="menu__header">
-                        <button class="menu__button menu__button--open" id="openMenu">
-                            <img src="/assets/icons/hamburger.svg" alt="Menu Logo" class="menu__logo">
-                        </button>
-                        <button class="menu__button menu__button--close" id="closeMenu">
-                            <span class="menu__close-icon"><img src="/assets/icons/closemenu.svg"></span>
-                        </button>
-                    </div>
-                    
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="terminatorENG.html" class="menu__link">TERMINATOR AND ROBOTICS</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="cameronENG.html" class="menu__link">JAMES CAMERON, INNOVATION AND ROBOTICS</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="h2g2ENG.html" class="menu__link">H2G2 : THE SATIRICAL FUTURE OF ROBOTICS</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="undergroundENG.html" class="menu__link">UNDERGROUND BY TOM WAITS : THE UNKNOWN FUTURE OF ROBOTICS IN A SONG</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="spotENG.html" class="menu__link">SPOT, BOSTON DYNAMIC'S  INNOVATIVE SMALL ROBOT </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="gallery.html" class="menu__link">MOVIE GALLERY</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="timeline.html" class="menu__link">ROBOTIC'S TIMELINE</a>
-                        </li>
-                        <li class="menu__item menu__info-trigger" id="infoTrigger">
-                            INFORMATIONS
-                            <span class="menu__arrow-icon"><img src="/assets/icons/dropdown.svg" alt="fleche-info"> </span>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="menu menu--info" id="infoMenu">
-                    <div class="menu__header">
-                        <button class="menu__button menu__button--back" id="backToMain">
-                            <span class="menu__back-icon"><img src="/assets/icons/arrowbutton.svg" alt="fermer-le-menu"></span>
-                        </button>
-                    </div>
-                    
-                    <ul class="menu__list">
+                <a href="/en/index.html"><img src="/assets/icons/logo.svg" alt="Aurizon Logo" class="header__logo"></a>
+            </div>
+            <h1 class="header__title">AURIZON</h1>
+            <button class="header__menu-button" id="openMenu">
+                <img src="/assets/icons/hamburger.svg" alt="Menu Logo" class="header__menu-icon">
+            </button>
+            <nav class="menu" id="mainMenu">
+                <div class="menu__header">
+                    <a href="index.html" class="menu__logo-link">
+                        <img src="/assets/icons/logo.svg" alt="Aurizon Logo" class="menu__logo">
+                    </a>
+                    <button class="menu__button menu__button--close" id="closeMenu">
+                        <span class="menu__close-icon"><img src="/assets/icons/closemenu.svg"></span>
+                    </button>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="terminatorENG.html" class="menu__link">TERMINATOR AND ROBOTICS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="cameronENG.html" class="menu__link">JAMES CAMERON, INNOVATION AND ROBOTICS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="h2g2ENG.html" class="menu__link">H2G2 : THE SATIRICAL FUTURE OF ROBOTICS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="undergroundENG.html" class="menu__link">UNDERGROUND BY TOM WAITS : THE UNKNOWN FUTURE OF ROBOTICS IN A SONG</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="spotENG.html" class="menu__link">SPOT, BOSTON DYNAMICS SMALL AND INNOVATIVE ROBOT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="gallery.html" class="menu__link">MOVIE GALLERY</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="timeline.html" class="menu__link">ROBOTICS TIMELINE</a>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__info-trigger" id="infoTrigger">
+                            <span>INFORMATIONS</span>
+                            <span class="menu__arrow-icon"><img src="/assets/icons/dropdown.svg" alt="fleche-info"></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="menu__dropdown" id="infoDropdown">
+                    <ul class="menu__dropdown-list">
                         <li class="menu__item">
                             <a href="glossary.html" class="menu__link">GLOSSARY</a>
                         </li>
@@ -71,7 +70,8 @@
                             <a href="contactENG.html" class="menu__link">CONTACT</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
         </header>
     </div>
     <nav class="header__nav">
@@ -199,13 +199,13 @@
                     issa.bacq-gadiaga@edu.univ-fcomte.fr
                 </a>
                 <div class="footer__social">
-                    <a href="#" class="footer__social-link">
+                    <a href="https://www.linkedin.com/in/bacq-issa-ab9662334/" class="footer__social-link">
                         <img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="footer__social-icon">
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="https://www.instagram.com/issa_bcq/?utm_source=ig_web_button_share_sheet" class="footer__social-link">
                         <img src="/assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="contactENG.html" class="footer__social-link">
                         <img src="/assets/icons/mailto.svg" alt="Email" class="footer__social-icon">
                     </a>
                 </div>
@@ -214,10 +214,10 @@
             <nav class="footer__nav">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">Other Projects</a>
+                        <a href="otherproject.html" class="footer__nav-link">Other Projects</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a href="#" class="footer__nav-link">GALLERY</a>
+                        <a href="gallery.html" class="footer__nav-link">GALLERY</a>
                     </li>
                 </ul>
             </nav>
@@ -227,7 +227,7 @@
             </p>
             <p class="footer__copyright">
                 Project carried out in 2024 as part of an educational exercise at the
-                <a href="#" class="footer__copyright-link">MMI department of Montbéliard</a>
+                <a href="https://www.linkedin.com/school/mmimontbeliard/posts/?feedView=all" class="footer__copyright-link">MMI department of Montbéliard</a>
             </p>
         </footer>
     </div>

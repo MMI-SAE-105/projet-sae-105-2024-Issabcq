@@ -73,13 +73,7 @@
   }
   
   /* Highlight section */
-  .article__section--highlight {
-    background-color: var(--strong-grey);
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 3rem 0;
-  }
-
+ 
   .vid__meta{
     text-align: center;
     color: white;
@@ -110,9 +104,6 @@
       font-size: 1rem;
     }
     
-    .article__section--highlight {
-      padding: 1.5rem;
-    }
   }
   
   @media (max-width: 480px) {
